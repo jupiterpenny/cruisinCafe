@@ -1,0 +1,102 @@
+<html>
+<head>
+
+    <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
+
+
+    <link href="animate.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <!-- <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="textillate-master/assets/jquery.lettering.js" rel="stylesheet"></script>
+    <script src="textillate-master/jquery.textillate.js"></script>
+
+    <link href="textillate-master/assets/animate.css" rel="stylesheet">
+    <link href="magic-master/magic.css" rel="stylesheet">
+    <script src="functions.js"></script>
+    <style>
+
+        @keyframes blink {
+            0% {
+                opacity: 1;
+            }
+            50% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+        .blink {
+            animation: blink 1s;
+            animation-iteration-count: infinite;
+        }
+
+        body {
+            background-color: black;
+            font-size: 100%;
+            width: 85%;
+            margin: 2em auto 0;
+            font-family: 'Open Sans Condensed', sans-serif;
+            font-weight: 700;
+
+        }
+
+
+
+
+
+
+    </style>
+</head>
+
+<body>
+<div class="container">
+
+
+            <div id="first" style="text-align:center; padding-right: 5%; padding-top: 15%;">
+                <img class="img-responsive" src="images/challenge1.jpg" style="width: 100%; height: 650px;"/>
+            </div>
+
+
+
+    <div id="second" style="display:none">
+        <img class="img-responsive" src="images/challenge2.jpg" style="width:100%; height: 650px; padding-right: 5%; padding-top:15%;"/>
+    </div>
+</div>
+
+
+
+
+
+<script>
+
+    function Redirect()
+    {
+        window.location="page8.html";
+    }
+    setTimeout('Redirect()', 6500);
+
+
+
+    function appear(){
+        document.getElementById("second").style.display = "block";
+        document.getElementById("first").style.display = "none";
+    }
+
+
+    setTimeout('appear()', 2500);
+</script>
+</body>
+</html>
